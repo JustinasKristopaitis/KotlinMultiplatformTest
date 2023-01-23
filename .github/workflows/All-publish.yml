@@ -5,6 +5,7 @@ on:
 #    branches:
 #      - "main"
 jobs:
+permissions: write-all
   call-kmmbridge-publish:
     uses: touchlab/KMMBridgeGithubWorkflow/.github/workflows/faktorybuildbranches.yml@v0.6
     with:
