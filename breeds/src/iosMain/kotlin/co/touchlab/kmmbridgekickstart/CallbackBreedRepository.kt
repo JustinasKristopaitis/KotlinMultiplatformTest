@@ -34,7 +34,7 @@ class CallbackBreedRepository(private val breedRepository: BreedRepository) {
         mainScope.launch { breedRepository.refreshBreedsIfStale() }
     }
 
-    fun makeHello(): HelloKotlin = HelloKotlin()
+    fun makeTracking(): Tracking = Tracking()
 }
 
 interface Cancellable {
