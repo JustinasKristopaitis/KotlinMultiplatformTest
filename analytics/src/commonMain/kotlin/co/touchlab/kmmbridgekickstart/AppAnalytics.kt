@@ -17,6 +17,7 @@ class AppAnalytics internal constructor() {
     }
 }
 
+
 data class AppEvent(
     val name: TrackingEventName,
     val parameters: Map<String, Any>?
