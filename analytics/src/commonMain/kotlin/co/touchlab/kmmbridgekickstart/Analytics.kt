@@ -12,6 +12,7 @@ fun initAnalytics(analytics: Analytics): AnalyticsHandle {
     }
     return AnalyticsHandle(
         appAnalytics = AppAnalytics()
+        )
 }
 
 data class AnalyticsHandle(
