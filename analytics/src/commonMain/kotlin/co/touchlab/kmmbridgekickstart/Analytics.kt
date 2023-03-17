@@ -11,16 +11,11 @@ fun initAnalytics(analytics: Analytics): AnalyticsHandle {
         throw IllegalStateException("Analytics can only be set once")
     }
     return AnalyticsHandle(
-        appAnalytics = AppAnalytics(),
-        breedAnalytics = BreedAnalytics(),
-        httpClientAnalytics = HttpClientAnalytics()
-    )
+        appAnalytics = AppAnalytics()
 }
 
 data class AnalyticsHandle(
-    val appAnalytics: AppAnalytics,
-    val breedAnalytics: BreedAnalytics,
-    val httpClientAnalytics: HttpClientAnalytics
+    val appAnalytics: AppAnalytics
 )
 
 internal fun sendEvent(name: String, vararg args: Pair<String, Any>) {

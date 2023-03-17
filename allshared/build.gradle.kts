@@ -14,7 +14,6 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":breeds"))
                 api(project(":analytics"))
             }
         }
