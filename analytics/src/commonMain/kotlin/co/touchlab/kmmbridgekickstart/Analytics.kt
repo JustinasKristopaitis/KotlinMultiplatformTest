@@ -10,9 +10,11 @@ fun initAnalytics(analytics: Analytics): AnalyticsHandle {
     if (!AnalyticsHandler.analyticsAtom.compareAndSet(null, analytics)) {
         throw IllegalStateException("Analytics can only be set once")
     }
+
     return AnalyticsHandle(
         appAnalytics = AppAnalytics()
     )
+    
 }
 
 data class AnalyticsHandle(
