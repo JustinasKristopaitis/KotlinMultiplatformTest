@@ -10,7 +10,7 @@ class AppAnalytics internal constructor() {
         return AppEvent(
             name = TrackingEventNames.trickRated,
         parameters = mapOf(
-                    "trick_id" to trickId,
+            "trick_id" to trickId,
             "rating" to rating
         )
         )
