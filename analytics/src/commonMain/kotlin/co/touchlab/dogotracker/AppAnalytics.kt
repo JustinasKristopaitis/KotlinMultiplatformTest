@@ -3,7 +3,7 @@ package co.touchlab.dogotracker
 class AppAnalytics internal constructor() {
     
     fun appStarted() {
-        sendEvent("appStarted")
+        sendEvent("appStarted", parameters = emptyMap())
     }
 
 
