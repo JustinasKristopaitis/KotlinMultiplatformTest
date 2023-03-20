@@ -7,6 +7,12 @@ class AppAnalytics internal constructor() {
     }
 
 
+    /**
+     * Tracks the rating of a trick.
+     *
+     * @param trickId The ID of the trick being rated.
+     * @param rating The rating value, from 1 to 5.
+     */
     fun trackTrickRating(trickId: String, rating: Int) {
    sendEvent(
        "trick_rated",
