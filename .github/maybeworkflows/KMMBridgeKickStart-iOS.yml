@@ -1,4 +1,4 @@
-name: KMMBridgeKickStart-iOS
+name: DogoTracker-iOS
 
 on:
   workflow_dispatch:

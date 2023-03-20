@@ -1,4 +1,4 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.dogotracker
 
 import co.touchlab.stately.concurrency.AtomicReference
 
@@ -10,9 +10,11 @@ fun initAnalytics(analytics: Analytics): AnalyticsHandle {
     if (!AnalyticsHandler.analyticsAtom.compareAndSet(null, analytics)) {
         throw IllegalStateException("Analytics can only be set once")
     }
+
     return AnalyticsHandle(
         appAnalytics = AppAnalytics()
-        )
+    )
+
 }
 
 data class AnalyticsHandle(

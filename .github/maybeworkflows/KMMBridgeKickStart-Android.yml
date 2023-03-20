@@ -1,4 +1,4 @@
-name: KMMBridgeKickStart-Android
+name: DogoTracker-Android
 
 on:
   workflow_dispatch:
