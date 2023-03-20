@@ -1,10 +1,9 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-
-let remoteKotlinUrl = "https://maven.pkg.github.com/touchlab/KMMBridgeKickStart/co/touchlab/kmmbridgekickstart/allshared-kmmbridge/0.13.0/allshared-kmmbridge-0.13.0.zip"
-let remoteKotlinChecksum = "fe57822fa8ae5806e791558b1a632c3cd3af6f185d8e866ff4e132f40f68a6d4"
-let packageName = "allshared"
+let remoteKotlinUrl = "https://maven.pkg.github.com/JustinasKristopaitis/KotlinMultiplatformTest/github/justinasKristopaitis/kotlinmultiplatformtest/allshared-kmmbridge/0.2.11/allshared-kmmbridge-0.2.11.zip"
+let remoteKotlinChecksum = "4ab364edd6fe3b9b45fe9d75f05e1fac1212f4d64e09e008f90ef993e688a403"
+let packageName = "DogoTracker"
 
 let package = Package(
     name: packageName,
