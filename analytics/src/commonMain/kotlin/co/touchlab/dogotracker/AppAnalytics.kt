@@ -7,15 +7,15 @@ class AppAnalytics internal constructor() {
     }
 
 
-    fun trackTrickRating(trickId: String, rating: Int): AppEvent {
-        return AppEvent(
-            name = TrackingEventNames.trickRated,
-        parameters = mapOf(
+    fun trackTrickRating(trickId: String, rating: Int) {
+   sendEvent(
+       "trick_rated",
+       parameters = mapOf(
             "trick_id" to trickId,
             "rating" to rating
         )
-        )
-    }
+   )
+   }
 }
 
 data class AppEvent(
