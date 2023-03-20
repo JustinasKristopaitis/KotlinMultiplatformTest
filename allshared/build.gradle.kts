@@ -33,14 +33,14 @@ kotlin {
     }
 
     cocoapods {
-        name = "KMMBridge-KickStart"
-        summary = "KMMBridgeKickStart sample"
+        name = "DogoTracker"
+        summary = "DogoTracker sample"
         homepage = "https://www.touchlab.co"
         ios.deploymentTarget = "13.5"
         extraSpecAttributes["libraries"] = "'c++', 'sqlite3'"
 
         framework {
-            baseName = "KMMBridgeKickStart"
+            baseName = "DogoTracker"
             export(project(":analytics"))
             isStatic = true
         }

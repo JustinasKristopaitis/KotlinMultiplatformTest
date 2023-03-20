@@ -1,10 +1,11 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.dogotracker
 
 class AppAnalytics internal constructor() {
     
     fun appStarted() {
         sendEvent("appStarted")
     }
+
 
     fun trackTrickRating(trickId: String, rating: Int): AppEvent {
         return AppEvent(
@@ -43,3 +44,5 @@ object AppEvents {
         )
     }
 }
+
+

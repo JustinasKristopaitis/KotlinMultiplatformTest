@@ -1,24 +1,24 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'KMMBridge-KickStart'
+    spec.name                     = 'DogoTracker'
     spec.version                  = '0.2'
     spec.homepage                 = 'https://www.touchlab.co'
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
     spec.license                  = ''
-    spec.summary                  = 'KMMBridgeKickStart sample'
-    spec.vendored_frameworks      = 'build/cocoapods/framework/KMMBridgeKickStart.framework'
+    spec.summary                  = 'DogoTracker'
+    spec.vendored_frameworks      = 'build/cocoapods/framework/DogoTracker.framework'
                 
     spec.ios.deployment_target = '13.5'
                 
                 
     spec.pod_target_xcconfig = {
         'KOTLIN_PROJECT_PATH' => ':allshared',
-        'PRODUCT_MODULE_NAME' => 'KMMBridgeKickStart',
+        'PRODUCT_MODULE_NAME' => 'DogoTracker',
     }
                 
     spec.script_phases = [
         {
-            :name => 'Build KMMBridge-KickStart',
+            :name => 'Build DogoTracker',
             :execution_position => :before_compile,
             :shell_path => '/bin/sh',
             :script => <<-SCRIPT

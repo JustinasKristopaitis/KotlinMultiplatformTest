@@ -1,4 +1,4 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.dogotracker
 
 import co.touchlab.stately.concurrency.AtomicReference
 
@@ -14,7 +14,7 @@ fun initAnalytics(analytics: Analytics): AnalyticsHandle {
     return AnalyticsHandle(
         appAnalytics = AppAnalytics()
     )
-    
+
 }
 
 data class AnalyticsHandle(
