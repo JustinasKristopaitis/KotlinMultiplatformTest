@@ -77,9 +77,17 @@ Initialize the SDK in `init` function in the `App` class
 
 ```
 init() {
-    self.handle = StartSDKKt.startSDK(analytics: AnalyticsImpl))
+    self.handle = StartSDKKt.startSDK(analytics: IosAnalytics))
 }
 ```
+
+```
+class IosAnalytics: Analytics {
+    func sendEvent(eventName: String, parameters: [String : Any]) {
+        //Call event. FE
+//        Tracker.shared.track(event: AppEvent(name: TrackingEventName(rawValue: eventName), parameters: parameters))
+    }
+}
 
 with your implementation of the `Analytics` interface.
 
