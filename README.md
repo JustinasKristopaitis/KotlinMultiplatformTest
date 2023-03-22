@@ -1,4 +1,4 @@
-# KMMBridgeKickStart
+# DogoTracker
 
 This is a sample of what a production app might look like when using
 [KMMBridge](https://github.com/touchlab/KMMBridge/).
@@ -54,7 +54,6 @@ this [tutorial blog post](https://touchlab.co/quick-start-with-kmmbridge-1-hour-
 Add dependencies in your build.gradle file
 
 ```kotlin
-implementation("co.touchlab.kmmbridgekickstart:breeds:${VERSION}")
 implementation("co.touchlab.kmmbridgekickstart:analytics:${VERSION}")
 ```
 
@@ -76,17 +75,15 @@ sdkHandle.appAnalytics.appStarted()
 Now you can inject the BreedRepository and Analytics classes into your ViewModel and use all its methods by using
 
 ```kotlin
-sdkHandle.breedRepository
 sdkHandle.appAnalytics
-sdkHandle.breedAnalytics
 ```
 
 ### iOS
 
-Import the `allshared` module
+Import the `DogoTracker` module
 
 ```
-import allshared
+import DogoTracker
 ```
 
 Initialize the SDK in `init` function in the `App` class
